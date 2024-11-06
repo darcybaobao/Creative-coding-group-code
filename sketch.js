@@ -1,9 +1,18 @@
 let cloudImage;
 let birdMask;
+let sunriseImage;
+let beachImage;
+let sounds = [];
 
 function preload() {
+  sunriseImage = loadImage('./images/sunrise.jpg'); // Load the sunrise image
   cloudImage = loadImage('./images/clouds.jpg'); // Load the cloud image
+  beachImage = loadImage('./images/beach.jpg'); // Load the beach image
+  sounds[0] = loadSound('assets /morning-birdsong-246402.mp3'); // Sunrise audio
+  sounds[1] = loadSound('assets /birds-taking-off-fly-6277.mp3'); // Clouds audio
+  sounds[2] = loadSound('assets /waves-bouncing-on-port-30644.mp3'); // Beach audio
 }
+
 
 function setup() {
     createCanvas(500, 400);
@@ -33,7 +42,8 @@ function setup() {
     pg.vertex(200, 150);
     pg.bezierVertex(172, 141, 160, 74, 73, 3); // top wings
     pg.bezierVertex(155, 188, 109, 98, 82, 152); // head curve
-    pg.bezierVertex(137, 126, 105, 144, 70, 149); // oral curve
+    pg.bezierVertex(137, 126, 105, 144, 70, 149); //  Mouth curve
+
     // Neck of the pigeon
     pg.bezierVertex(135, 166, 98, 196, 166, 244); // Neck Curve
 
@@ -56,3 +66,5 @@ function setup() {
     pg.vertex(284, 345);
     pg.endShape(CLOSE);
   }
+
+  
