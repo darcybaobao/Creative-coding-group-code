@@ -75,14 +75,15 @@ function draw() {
       pop();  // Restore the previous drawing state
     }
 
-
   // Select the background image based on the frame
   let bgImage;
   if (frame === 0) bgImage = sunriseImage;
   else if (frame === 1) bgImage = cloudImage;
   else if (frame === 2) bgImage = beachImage;
 
-  
+ //Making sure that the whole image fits in the dove mask
+ bgImage.resize(width,height);
+
   // Drawing each dove and setting up the properties
   doveData.forEach((dove, index) => {
     // Update dove position for horizontal movement
@@ -118,8 +119,8 @@ function mousePressed() {
 
 // Draw the dove shape with wing animation
 function drawDove(pg, scale) {
-  mainWingMovement = sin(frameCount * 0.1) * 10 * scale; // Scale main wing movement
-  secondaryWingMovement = cos(frameCount * 0.1) * 5 * scale; // Scale secondary wing movement
+  mainWingMovement = sin(frameCount * 10) * 30 * scale; // Scale main wing movement
+  secondaryWingMovement = cos(frameCount * 10) * 20 * scale; // Scale secondary wing movement
 
   pg.fill(255); // White dove color
   pg.noStroke();
@@ -149,7 +150,7 @@ function drawDove(pg, scale) {
   pg.endShape(CLOSE);
 
 }
-
+//creating our play button features 
 function togglePlaying() {
   let currentSong = songs[frame];
   
