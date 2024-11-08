@@ -29,8 +29,8 @@ The main difference between my animation compared to my group members is the use
 
 | Image   | Explanation | Reference |
 | :-----------: | :-----------: |:-----------: |
-| ![alt text](ray.png)      | I was inspired by the radiating lines in the shape of an ellipse and adapted this to represent my sun in my artwork.    |[Link here](https://editor.p5js.org/pattvira/sketches/mutDHiETf)  |
-| ![alt text](playbutton.png)      | Took inspiration from Coding Train's tutorial on how to create a play button for p5 JS. I like how it's simple, user-friendly and doesn't distract the viewer from the main artwork.   |[Link here](https://editor.p5js.org/codingtrain/sketches/3Z_lRpu2y)  |
+| ![alt text](images/ray.png)      | I was inspired by the radiating lines in the shape of an ellipse and adapted this to represent my sun in my artwork.    |[Link here](https://editor.p5js.org/pattvira/sketches/mutDHiETf)  |
+| ![alt text](images/playbutton.png)      | Took inspiration from Coding Train's tutorial on how to create a play button for p5 JS. I like how it's simple, user-friendly and doesn't distract the viewer from the main artwork.   |[Link here](https://editor.p5js.org/codingtrain/sketches/3Z_lRpu2y)  |
 
 
 :computer: :unlock: **Technical explanation** 
@@ -41,12 +41,12 @@ A few changes were made to the initial group code, this mainly consisted of:
 - Adding more doves of different sizes to create a more dynamic and interesting animation. 
 - Gradient background to enhance visual depth and rotating sun ray to create a sense of movement. 
 
-==Tools and techniques==: 
+<mark style= "background: yellow" > Tools and techniques </mark> : 
 
-Audio synchronisation- I used an array to store the three songs and made sure that the frame count of the images matched to that of the song. 'If' statements were used to change the frame and audio every 80 frames as well a for the creation of the play button. The technique was storing the songs was learnt during class in the Week 10 and 11 tutorials. 
+- Audio synchronisation- I used an array to store the three songs and made sure that the frame count of the images matched to that of the song. 'If' statements were used to change the frame and audio every 80 frames as well a for the creation of the play button. The technique was storing the songs was learnt during class in the Week 10 and 11 tutorials. 
 
-Gradient background- To create the graident background, [lerpColor()](https://p5js.org/reference/p5/lerpColor/) was used to blend orange and pink together. A 'for' loop was used, taking into the account of the canvas height to create a seamless gradient effect. 
+- Gradient background- To create the graident background, [lerpColor()](https://p5js.org/reference/p5/lerpColor/) was used to blend orange and pink together. A 'for' loop was used, taking into the account of the canvas height to create a seamless gradient effect. 
 
-Rotating rays- Drawing inspiration from [Patt Vira](https://editor.p5js.org/pattvira/sketches/mutDHiETf), I created 300 rays of length 550 and set the speed and angle properties. I then used a 'for loop' to get each ray to be evenly spaced and have them rotate at a slow speed. The 'push' and 'pop' method was used to transform the data. 
+- Rotating rays- Drawing inspiration from [Patt Vira](https://editor.p5js.org/pattvira/sketches/mutDHiETf), I created 300 rays of length 550 and set the speed and angle properties. I then used a 'for loop' to get each ray to be evenly spaced and have them rotate at a slow speed. The 'push' and 'pop' method was used to transform the data. 
 
-Wing animation- To get the wings of the dove to move, [sin and cos](https://p5js.org/examples/angles-and-motion-sine-cosine/)functions were used to scale the movement with consideration fo the frame count of the images. 
+- Wing animation- To get the wings of the dove to move, [sin and cos] (https://p5js.org/examples/angles-and-motion-sine-cosine/)functions were used to scale the movement with consideration fo the frame count of the images. 
