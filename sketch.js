@@ -99,7 +99,7 @@ function draw() {
     image(maskedImage, dove.x, dove.y, width * dove.size, height * dove.size);
   });
 
-  // Changing the image frame and audio every 100 frames
+  // Changing the image frame and audio every 80 frames
   if (frameCount % 80 === 0) {
     songs.forEach(song => song.stop()); // Stop all sounds
     frame = (frame + 1) % 3; // Cycle through frames

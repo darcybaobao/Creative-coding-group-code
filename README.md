@@ -49,4 +49,4 @@ A few changes were made to the initial group code, this mainly consisted of:
 
 - Rotating rays- Drawing inspiration from [Patt Vira](https://editor.p5js.org/pattvira/sketches/mutDHiETf), I created 300 rays of length 550 and set the speed and angle properties. I then used a 'for loop' to get each ray to be evenly spaced and have them rotate at a slow speed. The 'push' and 'pop' method was used to transform the data. 
 
-- Wing animation- To get the wings of the dove to move, [sin and cos] (https://p5js.org/examples/angles-and-motion-sine-cosine/)functions were used to scale the movement with consideration fo the frame count of the images. 
+- Wing animation- To get the wings of the dove to move, [sin and cos](https://p5js.org/examples/angles-and-motion-sine-cosine/)functions were used to scale the movement with consideration fo the frame count of the images. 
