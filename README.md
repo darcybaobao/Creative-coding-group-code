@@ -4,10 +4,12 @@
 
 :books::pencil2: ==How to guide:== 
 
-To interact with 'Modern Dove,' the user needs to press the play button on the bottom left hand corner for the music to start. The audio will match the animation of the dove. 
+To interact with 'Modern Dove,' the user needs to press the play button on the bottom left hand corner for the music to start. The audio will match the animation of the dove that plays over 11 seconds before repeating. 
 
 
 ### **Part two: Individual approach**
+
+:music: For this individual component, I have choosen to use the content of three audio tracks to animate my work. 
 
 
 
